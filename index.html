@@ -32,11 +32,7 @@
 									>
 								</li>
 								<li>
-									<a
-										href="#contact"
-										class="navigation-link navigation-link__main"
-										>Contáctenos</a
-									>
+									<a href="#contact" class="main-button">Contáctenos</a>
 								</li>
 							</ul>
 						</nav>
@@ -115,122 +111,128 @@
 			</div>
 		</section>
 		<section id="faq">
-			<div class="top-circle"></div>
-			<div class="bottom-circle"></div>
-			<div class="container">
-				<h2 class="section-title">Preguntas Frecuentes</h2>
-				<div>
-					<div class="question">
-						<div class="question-header">
-							<h3>Pregunta 1?</h3>
-							<img src="images/up-arrow.svg" alt="up arrow" />
+			<div class="faq-section">
+				<div class="top-circle"></div>
+				<div class="bottom-circle"></div>
+				<div class="container">
+					<h2 class="section-title">Preguntas Frecuentes</h2>
+					<div>
+						<div class="question">
+							<div class="question-header">
+								<h3>Pregunta 1?</h3>
+								<img src="images/up-arrow.svg" alt="up arrow" />
+							</div>
+							<p>
+								Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius
+								blanditiis officia placeat odio totam iste quasi sint ut, minima
+								libero, nulla a illo eligendi dolores quisquam. Dolore
+								voluptatibus repellendus saepe!
+							</p>
 						</div>
-						<p>
-							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius
-							blanditiis officia placeat odio totam iste quasi sint ut, minima
-							libero, nulla a illo eligendi dolores quisquam. Dolore
-							voluptatibus repellendus saepe!
-						</p>
-					</div>
-					<div class="question">
-						<div class="question-header">
-							<h3>Pregunta 2?</h3>
-							<img src="images/down-arrow.svg" alt="down arrow" />
+						<div class="question">
+							<div class="question-header">
+								<h3>Pregunta 2?</h3>
+								<img src="images/down-arrow.svg" alt="down arrow" />
+							</div>
 						</div>
-					</div>
-					<div class="question">
-						<div class="question-header">
-							<h3>Pregunta 3?</h3>
-							<img src="images/down-arrow.svg" alt="down arrow" />
+						<div class="question">
+							<div class="question-header">
+								<h3>Pregunta 3?</h3>
+								<img src="images/down-arrow.svg" alt="down arrow" />
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 		<section id="contact">
-			<div class="container">
-				<h2 class="section-title">Contáctenos</h2>
-				<div class="form">
-					<form action="">
-						<label for="id" class="label-required"
-							>Número de Identificación</label
-						>
-						<input
-							type="text"
-							id="id"
-							name="id"
-							placeholder="Número de Identificación"
-							required
-						/>
-						<label for="name" class="label-required">Nombres y Apellidos</label>
-						<input
-							type="text"
-							id="name"
-							name="name"
-							placeholder="Nombres y Apellidos"
-							required
-						/>
-						<label for="cel" class="label-required">Celular</label>
-						<input
-							type="text"
-							id="cel"
-							name="cel"
-							placeholder="Celular"
-							required
-						/>
-						<label for="email" class="label-required">Email</label>
-						<input
-							type="email"
-							id="email"
-							name="email"
-							placeholder="Email"
-							required
-						/>
-						<label for="area" class="label-required">Área/operación</label>
-						<input
-							type="text"
-							id="area"
-							name="area"
-							placeholder="Área/operación"
-							required
-						/>
-						<label for="charge" class="label-required">Cargo</label>
-						<input
-							type="text"
-							id="charge"
-							name="charge"
-							placeholder="Cargo"
-							required
-						/>
-						<label for="location" class="label-required"
-							>Si necesitamos contactarte telefonicamente, indícanos donde te
-							encuentras?</label
-						>
-						<input
-							list="locations"
-							id="location"
-							name="location"
-							required
-							placeholder="Si necesitamos contactarte telefonicamente, indícanos donde te encuentras?"
-						/>
-						<datalist id="locations">
-							<option value="Colombia"></option>
-							<option value="Canada"></option>
-							<option value="USA"></option>
-						</datalist>
+			<div class="contact-section">
+				<div class="container">
+					<h2 class="section-title">Contáctenos</h2>
+					<div class="form-wrapper">
+						<form action="" class="main-form">
+							<label for="id" class="label-required"
+								>Número de Identificación</label
+							>
+							<input
+								type="number"
+								id="id"
+								name="id"
+								placeholder="Número de Identificación"
+								required
+							/>
+							<label for="name" class="label-required"
+								>Nombres y Apellidos</label
+							>
+							<input
+								type="text"
+								id="name"
+								name="name"
+								placeholder="Nombres y Apellidos"
+								required
+							/>
+							<label for="cel" class="label-required">Celular</label>
+							<input
+								type="number"
+								id="cel"
+								name="cel"
+								placeholder="Celular"
+								required
+							/>
+							<label for="email" class="label-required">Email</label>
+							<input
+								type="email"
+								id="email"
+								name="email"
+								placeholder="Email"
+								required
+							/>
+							<label for="area" class="label-required">Área/operación</label>
+							<input
+								type="text"
+								id="area"
+								name="area"
+								placeholder="Área/operación"
+								required
+							/>
+							<label for="charge" class="label-required">Cargo</label>
+							<input
+								type="text"
+								id="charge"
+								name="charge"
+								placeholder="Cargo"
+								required
+							/>
+							<label for="location" class="label-required"
+								>Si necesitamos contactarte telefonicamente, indícanos donde te
+								encuentras?</label
+							>
+							<input
+								list="locations"
+								id="location"
+								name="location"
+								required
+								placeholder="Si necesitamos contactarte telefonicamente, indícanos donde te encuentras?"
+							/>
+							<datalist id="locations">
+								<option value="Colombia"></option>
+								<option value="Canada"></option>
+								<option value="USA"></option>
+							</datalist>
 
-						<label for="time" class="label-required"
-							>Horario en el que te podemos contactar</label
-						>
-						<input
-							type="text"
-							id="time"
-							name="time"
-							placeholder="Horario en el que te podemos contactar"
-							required
-						/>
-						<button type="submit">Enviar</button>
-					</form>
+							<label for="time" class="label-required"
+								>Horario en el que te podemos contactar</label
+							>
+							<input
+								type="text"
+								id="time"
+								name="time"
+								placeholder="Horario en el que te podemos contactar"
+								required
+							/>
+							<button type="submit" class="main-button">Enviar</button>
+						</form>
+					</div>
 				</div>
 			</div>
 		</section>
