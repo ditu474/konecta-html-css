@@ -102,6 +102,10 @@ body {
 	transform: scaleX(1);
 }
 
+.nav-toggle-label {
+	position: absolute;
+}
+
 .info {
 	display: flex;
 	justify-content: space-evenly;
@@ -489,6 +493,7 @@ footer {
 
 	.nav-toggle-label {
 		z-index: 20;
+		position: static;
 	}
 
 	.nav-toggle-label:hover {
