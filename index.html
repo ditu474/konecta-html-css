@@ -4,7 +4,13 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="msapplication-TileColor" content="#da532c" />
+		<meta name="theme-color" content="#ffffff" />
 		<link rel="stylesheet" href="styles.css" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+		<link rel="manifest" href="/site.webmanifest" />
 		<title>Looki</title>
 	</head>
 	<body>
@@ -24,7 +30,7 @@
 							<ul class="navigation">
 								<li><a href="#home" class="navigation-link">Inicio</a></li>
 								<li>
-									<a href="#who" class="navigation-link">Quienes somos</a>
+									<a href="#who" class="navigation-link">Quiénes somos</a>
 								</li>
 								<li>
 									<a href="#faq" class="navigation-link"
@@ -85,7 +91,7 @@
 		</section>
 		<section id="who">
 			<div class="container">
-				<h2 class="section-title">Quienes Somos</h2>
+				<h2 class="section-title">Quiénes Somos</h2>
 				<div class="cards">
 					<div class="card">
 						<h3>Misión</h3>
@@ -178,6 +184,8 @@
 								name="name"
 								placeholder="Nombres y Apellidos"
 								required
+								minlength="5"
+								maxlength="50"
 							/>
 							<label for="cel" class="label-required">Celular</label>
 							<input
@@ -194,6 +202,7 @@
 								name="email"
 								placeholder="Email"
 								required
+								minlength="5"
 							/>
 							<label for="area" class="label-required">Área/operación</label>
 							<input
@@ -212,15 +221,15 @@
 								required
 							/>
 							<label for="location" class="label-required"
-								>Si necesitamos contactarte telefonicamente, indícanos donde te
-								encuentras?</label
+								>Si necesitamos contactarte telefónicamente, indícanos donde te
+								encuentras</label
 							>
 							<input
 								list="locations"
 								id="location"
 								name="location"
 								required
-								placeholder="Si necesitamos contactarte telefonicamente, indícanos donde te encuentras?"
+								placeholder="Si necesitamos contactarte telefónicamente, indícanos donde te encuentras"
 							/>
 							<datalist id="locations">
 								<option value="Colombia"></option>
@@ -232,7 +241,9 @@
 								>Horario en el que te podemos contactar</label
 							>
 							<input
-								type="text"
+								type="datetime-local"
+								min="2021-04-09T14:00"
+								value="2021-04-09T14:00"
 								id="time"
 								name="time"
 								placeholder="Horario en el que te podemos contactar"
