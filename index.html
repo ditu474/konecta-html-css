@@ -7,25 +7,28 @@
 		<meta name="msapplication-TileColor" content="#da532c" />
 		<meta name="theme-color" content="#ffffff" />
 		<link rel="stylesheet" href="styles.css" />
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-		<link rel="manifest" href="/site.webmanifest" />
+		<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+		<link rel="icon" type="image/x-icon" href="favicon.ico" />
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+		<link rel="manifest" href="site.webmanifest" />
 		<title>Looki</title>
 	</head>
 	<body>
 		<div class="top-button">
 			<a href="#home">
-				<img src="images/top-arrow.svg" alt="top arrow" />
+				<img src="images/top-arrow.svg" alt="top arrow" loading="lazy" />
 			</a>
 		</div>
 		<section id="home">
 			<div class="hero">
-				<div class="container">
-					<header>
+				<header>
+					<div class="container menu">
 						<a href="#home" class="logo">
-							<img src="images/logo-name.png" alt="logo" />
+							<img src="images/logo-name.png" alt="logo" loading="lazy" />
 						</a>
+						<input type="checkbox" id="nav-toggle" class="nav-toggle" />
 						<nav>
 							<ul class="navigation">
 								<li><a href="#home" class="navigation-link">Inicio</a></li>
@@ -42,27 +45,37 @@
 								</li>
 							</ul>
 						</nav>
-					</header>
-					<div class="info">
-						<div class="info-left">
-							<h1>Looki</h1>
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit.
-								Veritatis, consectetur incidunt.
-							</p>
-							<img
-								src="images/app-store.png"
-								alt="app-store-button"
-								class="download-images"
-							/>
-							<img
-								src="images/google-play.png"
-								alt="google-play-button"
-								class="download-images"
-							/>
-						</div>
-						<img src="images/app.svg" alt="app" class="iphone-app" />
+						<label for="nav-toggle" class="nav-toggle-label">
+							<span></span>
+						</label>
 					</div>
+				</header>
+				<div class="container info">
+					<div class="info-left">
+						<h1>Looki</h1>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit.
+							Veritatis, consectetur incidunt.
+						</p>
+						<img
+							src="images/app-store.png"
+							alt="app-store-button"
+							class="download-images"
+							loading="lazy"
+						/>
+						<img
+							src="images/google-play.png"
+							alt="google-play-button"
+							class="download-images"
+							loading="lazy"
+						/>
+					</div>
+					<img
+						src="images/app.svg"
+						alt="app"
+						class="iphone-app"
+						loading="lazy"
+					/>
 				</div>
 				<div class="custom-shape-divider-bottom">
 					<svg
@@ -101,7 +114,7 @@
 							deserunt amet tempora delectus, ea assumenda nesciunt eaque animi
 							maxime quidem!
 						</p>
-						<img src="images/mision.svg" alt="mision" />
+						<img src="images/mision.svg" alt="mision" loading="lazy" />
 					</div>
 					<div class="card">
 						<h3>Visión</h3>
@@ -110,7 +123,7 @@
 							deserunt amet tempora delectus, ea assumenda nesciunt eaque animi
 							maxime quidem!
 						</p>
-						<img src="images/vision.svg" alt="vision" />
+						<img src="images/vision.svg" alt="vision" loading="lazy" />
 					</div>
 					<div class="card">
 						<h3>Historia</h3>
@@ -119,7 +132,7 @@
 							deserunt amet tempora delectus, ea assumenda nesciunt eaque animi
 							maxime quidem!
 						</p>
-						<img src="images/history.svg" alt="historia" />
+						<img src="images/history.svg" alt="historia" loading="lazy" />
 					</div>
 				</div>
 			</div>
@@ -134,7 +147,7 @@
 						<div class="question">
 							<div class="question-header">
 								<h3>Pregunta 1?</h3>
-								<img src="images/up-arrow.svg" alt="up arrow" />
+								<img src="images/up-arrow.svg" alt="up arrow" loading="lazy" />
 							</div>
 							<p>
 								Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius
@@ -146,13 +159,21 @@
 						<div class="question">
 							<div class="question-header">
 								<h3>Pregunta 2?</h3>
-								<img src="images/down-arrow.svg" alt="down arrow" />
+								<img
+									src="images/down-arrow.svg"
+									alt="down arrow"
+									loading="lazy"
+								/>
 							</div>
 						</div>
 						<div class="question">
 							<div class="question-header">
 								<h3>Pregunta 3?</h3>
-								<img src="images/down-arrow.svg" alt="down arrow" />
+								<img
+									src="images/down-arrow.svg"
+									alt="down arrow"
+									loading="lazy"
+								/>
 							</div>
 						</div>
 					</div>

@@ -45,7 +45,7 @@ body {
 	background-color: var(--main-color);
 }
 
-.hero header {
+.menu {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -59,6 +59,10 @@ body {
 	width: 80%;
 	margin: 0 auto;
 	max-width: 1500px;
+}
+
+.nav-toggle {
+	display: none;
 }
 
 .navigation {
@@ -367,8 +371,8 @@ footer {
 		width: 85%;
 	}
 
-	header {
-		padding-top: 1rem;
+	.menu {
+		padding: 0.5rem 0;
 	}
 
 	.navigation-link {
@@ -458,8 +462,105 @@ footer {
 }
 
 @media only screen and (max-width: 1100px) {
-	.navigation-link {
+	section {
+		padding-top: 60px;
+		margin-top: -60px;
+	}
+
+	.top-button {
 		display: none;
+	}
+
+	header {
+		background-color: var(--main-color);
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 15;
+	}
+
+	.logo img {
+		height: 3rem;
+	}
+
+	.nav-toggle {
+		display: none;
+	}
+
+	.nav-toggle-label {
+		z-index: 20;
+	}
+
+	.nav-toggle-label:hover {
+		cursor: pointer;
+	}
+
+	.nav-toggle-label span,
+	.nav-toggle-label span::before,
+	.nav-toggle-label span::after {
+		width: 2em;
+		display: block;
+		background-color: white;
+		height: 2px;
+		border-radius: 5px;
+		position: relative;
+	}
+
+	.nav-toggle-label span::before,
+	.nav-toggle-label span::after {
+		content: '';
+		position: absolute;
+	}
+
+	.nav-toggle-label span::before {
+		bottom: 7px;
+	}
+
+	.nav-toggle-label span::after {
+		top: 7px;
+	}
+
+	nav {
+		background-color: var(--accent-color);
+		position: fixed;
+		min-height: 100vh;
+		top: 0;
+		right: -60vw;
+		width: 60vw;
+		transition: 0.5s;
+		-webkit-transition: 0.5s;
+		-moz-transition: 0.5s;
+		-o-transition: 0.5s;
+		-ms-transition: 0.5s;
+	}
+
+	.nav-toggle:checked ~ nav {
+		right: 0;
+	}
+
+	.navigation {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		min-height: 100vh;
+	}
+
+	.navigation li {
+		margin-right: 0;
+		margin-bottom: 2rem;
+	}
+
+	.navigation-link {
+		color: white;
+	}
+
+	.navigation-link::after {
+		border-bottom: 5px solid var(--main-color);
+	}
+
+	.info {
+		padding-top: 2rem;
 	}
 }
 
@@ -552,8 +653,8 @@ footer {
 		height: 3rem;
 	}
 
-	.navigation .main-button {
-		display: none;
+	.navigation-link {
+		font-size: 1.1rem;
 	}
 
 	.info-left h1 {
