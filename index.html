@@ -16,8 +16,8 @@
 		<title>Looki</title>
 	</head>
 	<body>
-		<div class="top-button">
-			<a href="#home">
+		<div>
+			<a href="#home" class="top-button">
 				<img src="images/top-arrow.svg" alt="top arrow" loading="lazy" />
 			</a>
 		</div>
@@ -103,7 +103,7 @@
 			</div>
 		</section>
 		<section id="who">
-			<div class="container">
+			<div class="container section">
 				<h2 class="section-title">Quienes Somos</h2>
 				<div class="cards">
 					<div class="card">
@@ -138,159 +138,153 @@
 			</div>
 		</section>
 		<section id="faq">
-			<div class="faq-section">
-				<div class="container">
-					<h2 class="section-title">Preguntas Frecuentes</h2>
-					<div>
-						<div class="question">
-							<input
-								type="checkbox"
-								id="question1-toggle"
-								class="question-toggle"
-							/>
-							<div class="question-header">
-								<h3>Pregunta 1?</h3>
-								<label for="question1-toggle" class="question-toggle-label">
-								</label>
-							</div>
-							<p>
-								Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-								Maiores consequuntur totam ea vitae nesciunt exercitationem!
-							</p>
+			<div class="container section">
+				<h2 class="section-title">Preguntas Frecuentes</h2>
+				<div>
+					<div class="question">
+						<input
+							type="checkbox"
+							id="question1-toggle"
+							class="question-toggle"
+						/>
+						<div class="question-header">
+							<h3>Pregunta 1?</h3>
+							<label for="question1-toggle" class="question-toggle-label">
+							</label>
 						</div>
-						<div class="question">
-							<input
-								type="checkbox"
-								id="question2-toggle"
-								class="question-toggle"
-							/>
-							<div class="question-header">
-								<h3>Pregunta 2?</h3>
-								<label for="question2-toggle" class="question-toggle-label">
-								</label>
-							</div>
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-								corrupti aspernatur expedita perferendis dignissimos recusandae
-								quidem possimus, iste mollitia ducimus, quae esse debitis dicta
-								officiis illum nam quia amet architecto?
-							</p>
+						<p>
+							Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores
+							consequuntur totam ea vitae nesciunt exercitationem!
+						</p>
+					</div>
+					<div class="question">
+						<input
+							type="checkbox"
+							id="question2-toggle"
+							class="question-toggle"
+						/>
+						<div class="question-header">
+							<h3>Pregunta 2?</h3>
+							<label for="question2-toggle" class="question-toggle-label">
+							</label>
 						</div>
-						<div class="question">
-							<input
-								type="checkbox"
-								id="question3-toggle"
-								class="question-toggle"
-							/>
-							<div class="question-header">
-								<h3>Pregunta 3?</h3>
-								<label for="question3-toggle" class="question-toggle-label">
-								</label>
-							</div>
-							<p>
-								Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius
-								blanditiis officia placeat odio totam iste quasi sint ut, minima
-								libero, nulla a illo eligendi dolores quisquam. Dolore
-								voluptatibus repellendus saepe!
-							</p>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+							corrupti aspernatur expedita perferendis dignissimos recusandae
+							quidem possimus, iste mollitia ducimus, quae esse debitis dicta
+							officiis illum nam quia amet architecto?
+						</p>
+					</div>
+					<div class="question">
+						<input
+							type="checkbox"
+							id="question3-toggle"
+							class="question-toggle"
+						/>
+						<div class="question-header">
+							<h3>Pregunta 3?</h3>
+							<label for="question3-toggle" class="question-toggle-label">
+							</label>
 						</div>
+						<p>
+							Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius
+							blanditiis officia placeat odio totam iste quasi sint ut, minima
+							libero, nulla a illo eligendi dolores quisquam. Dolore
+							voluptatibus repellendus saepe!
+						</p>
 					</div>
 				</div>
 			</div>
 		</section>
 		<section id="contact">
-			<div class="contact-section">
-				<div class="container">
-					<h2 class="section-title">Contáctenos</h2>
-					<div class="form-wrapper">
-						<form action="" class="main-form">
-							<label for="id" class="label-required"
-								>Número de Identificación</label
-							>
-							<input
-								type="number"
-								id="id"
-								name="id"
-								placeholder="Número de Identificación"
-								required
-							/>
-							<label for="name" class="label-required"
-								>Nombres y Apellidos</label
-							>
-							<input
-								type="text"
-								id="name"
-								name="name"
-								placeholder="Nombres y Apellidos"
-								required
-								minlength="5"
-								maxlength="50"
-							/>
-							<label for="cel" class="label-required">Celular</label>
-							<input
-								type="number"
-								id="cel"
-								name="cel"
-								placeholder="Celular"
-								required
-							/>
-							<label for="email" class="label-required">Email</label>
-							<input
-								type="email"
-								id="email"
-								name="email"
-								placeholder="Email"
-								required
-								minlength="5"
-							/>
-							<label for="area" class="label-required">Área/operación</label>
-							<input
-								type="text"
-								id="area"
-								name="area"
-								placeholder="Área/operación"
-								required
-							/>
-							<label for="charge" class="label-required">Cargo</label>
-							<input
-								type="text"
-								id="charge"
-								name="charge"
-								placeholder="Cargo"
-								required
-							/>
-							<label for="location" class="label-required"
-								>Si necesitamos contactarte telefónicamente, indícanos donde te
-								encuentras</label
-							>
-							<input
-								list="locations"
-								id="location"
-								name="location"
-								required
-								placeholder="Si necesitamos contactarte telefónicamente, indícanos donde te encuentras"
-							/>
-							<datalist id="locations">
-								<option value="Colombia"></option>
-								<option value="Canada"></option>
-								<option value="USA"></option>
-							</datalist>
+			<div class="container section">
+				<h2 class="section-title">Contáctenos</h2>
+				<div class="form-wrapper">
+					<form action="" class="main-form">
+						<label for="id" class="label-required"
+							>Número de Identificación</label
+						>
+						<input
+							type="number"
+							id="id"
+							name="id"
+							placeholder="Número de Identificación"
+							required
+						/>
+						<label for="name" class="label-required">Nombres y Apellidos</label>
+						<input
+							type="text"
+							id="name"
+							name="name"
+							placeholder="Nombres y Apellidos"
+							required
+							minlength="5"
+							maxlength="50"
+						/>
+						<label for="cel" class="label-required">Celular</label>
+						<input
+							type="number"
+							id="cel"
+							name="cel"
+							placeholder="Celular"
+							required
+						/>
+						<label for="email" class="label-required">Email</label>
+						<input
+							type="email"
+							id="email"
+							name="email"
+							placeholder="Email"
+							required
+							minlength="5"
+						/>
+						<label for="area" class="label-required">Área/operación</label>
+						<input
+							type="text"
+							id="area"
+							name="area"
+							placeholder="Área/operación"
+							required
+						/>
+						<label for="charge" class="label-required">Cargo</label>
+						<input
+							type="text"
+							id="charge"
+							name="charge"
+							placeholder="Cargo"
+							required
+						/>
+						<label for="location" class="label-required"
+							>Si necesitamos contactarte telefónicamente, indícanos donde te
+							encuentras</label
+						>
+						<input
+							list="locations"
+							id="location"
+							name="location"
+							required
+							placeholder="Si necesitamos contactarte telefónicamente, indícanos donde te encuentras"
+						/>
+						<datalist id="locations">
+							<option value="Colombia"></option>
+							<option value="Canada"></option>
+							<option value="USA"></option>
+						</datalist>
 
-							<label for="time" class="label-required"
-								>Horario en el que te podemos contactar</label
-							>
-							<input
-								type="datetime-local"
-								min="2021-04-09T14:00"
-								value="2021-04-09T14:00"
-								id="time"
-								name="time"
-								placeholder="Horario en el que te podemos contactar"
-								required
-							/>
-							<button type="submit" class="main-button">Enviar</button>
-						</form>
-					</div>
+						<label for="time" class="label-required"
+							>Horario en el que te podemos contactar</label
+						>
+						<input
+							type="datetime-local"
+							min="2021-04-09T14:00"
+							value="2021-04-09T14:00"
+							id="time"
+							name="time"
+							placeholder="Horario en el que te podemos contactar"
+							required
+						/>
+						<button type="submit" class="main-button">Enviar</button>
+					</form>
 				</div>
 			</div>
 		</section>

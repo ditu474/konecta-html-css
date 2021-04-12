@@ -180,14 +180,14 @@ body {
 	text-align: center;
 	font-size: 3rem;
 	color: var(--accent-color);
-	margin: 0 0 2rem 0;
+	margin: 0;
+	margin-bottom: 4rem;
 }
 
 .cards {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin: 5rem 0 0 0;
 }
 
 .card {
@@ -217,9 +217,8 @@ body {
 
 /* FAQ */
 
-.faq-section {
-	margin-top: 2rem;
-	padding: 3rem 0;
+.section {
+	padding-top: 4rem;
 }
 
 .question {
@@ -280,10 +279,6 @@ body {
 }
 
 /* CONTACT */
-
-.contact-section {
-	margin: 3rem 0;
-}
 
 .form-wrapper {
 	margin: 0 10rem;
@@ -437,10 +432,6 @@ footer {
 		font-size: 2.5rem;
 	}
 
-	.cards {
-		margin-top: 4rem;
-	}
-
 	.card {
 		margin: 0 1rem;
 	}
@@ -470,11 +461,6 @@ footer {
 }
 
 @media only screen and (max-width: 1100px) {
-	section {
-		padding-top: 60px;
-		margin-top: -60px;
-	}
-
 	.top-button {
 		display: none;
 	}
