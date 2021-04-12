@@ -11,6 +11,10 @@
 	box-sizing: border-box;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -49,6 +53,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	animation: fadeIn 1.2s;
 }
 
 .logo img {
@@ -116,11 +121,13 @@ body {
 
 .iphone-app {
 	height: 40rem;
+	animation: fadeAndScale 1.2s linear;
 }
 
 .info-left {
 	max-width: 50%;
 	padding-bottom: 2rem;
+	animation: fadeLeftCenter 1.2s linear;
 }
 
 .info-left h1 {
@@ -323,6 +330,12 @@ input:-moz-placeholder {
 input::-moz-placeholder {
 	font-family: 'Nunito', sans-serif;
 	color: #929292;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
 }
 
 footer {
@@ -546,9 +559,11 @@ footer {
 	.navigation {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
-		align-items: center;
+		justify-content: flex-start;
+		align-items: flex-end;
 		min-height: 100vh;
+		margin-top: 5rem;
+		width: 90%;
 	}
 
 	.navigation li {
@@ -694,5 +709,53 @@ footer {
 @media only screen and (max-width: 330px) {
 	.iphone-app {
 		height: 25rem;
+	}
+
+	.navigation-link {
+		font-size: 1rem;
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeLeftCenter {
+	0% {
+		transform: translateX(-100px);
+		opacity: 0;
+	}
+
+	50% {
+		transform: translateX(-100px);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes fadeAndScale {
+	0% {
+		transform: scale3d(0.75, 0.75, 1);
+		opacity: 0;
+	}
+
+	50% {
+		transform: scale3d(0.75, 0.75, 1);
+		opacity: 0;
+	}
+
+	100% {
+		transform: scale3d(1, 1, 1);
+		opacity: 1;
 	}
 }
