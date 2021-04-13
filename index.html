@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="msapplication-TileColor" content="#da532c" />
 		<meta name="theme-color" content="#ffffff" />
-		<link rel="stylesheet" href="styles.min.css" />
+		<link rel="stylesheet" href="styles.css" />
 		<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
 		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
 		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
@@ -17,41 +17,45 @@
 	</head>
 	<body>
 		<div>
-			<a href="#home" class="top-button">
+			<a href="#home" class="btn__upward">
 				<img src="images/top-arrow.svg" alt="top arrow" loading="lazy" />
 			</a>
 		</div>
 		<section id="home">
-			<div class="hero">
+			<div class="background__hero">
 				<header>
-					<div class="container menu">
-						<a href="#home" class="logo">
+					<div class="container top__menu">
+						<a href="#home" class="top__menu--logo">
 							<img src="images/logo-name.png" alt="logo" loading="lazy" />
 						</a>
-						<input type="checkbox" id="nav-toggle" class="nav-toggle" />
+						<input
+							type="checkbox"
+							id="nav-toggle"
+							class="responsive__nav--toggle"
+						/>
 						<nav>
-							<ul class="navigation">
-								<li><a href="#home" class="navigation-link">Inicio</a></li>
+							<ul class="main__nav">
+								<li><a href="#home" class="main__nav--link">Inicio</a></li>
 								<li>
-									<a href="#who" class="navigation-link">Quienes somos</a>
+									<a href="#who" class="main__nav--link">Quienes somos</a>
 								</li>
 								<li>
-									<a href="#faq" class="navigation-link"
+									<a href="#faq" class="main__nav--link"
 										>Preguntas frecuentes</a
 									>
 								</li>
 								<li>
-									<a href="#contact" class="main-button">Contáctenos</a>
+									<a href="#contact" class="main__btn">Contáctenos</a>
 								</li>
 							</ul>
 						</nav>
-						<label for="nav-toggle" class="nav-toggle-label">
+						<label for="nav-toggle" class="responsive__nav--label">
 							<span></span>
 						</label>
 					</div>
 				</header>
-				<div class="container info">
-					<div class="info-left">
+				<div class="container hero__info">
+					<div class="hero__info--left">
 						<h1>Looki</h1>
 						<p>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -60,20 +64,20 @@
 						<img
 							src="images/app-store.png"
 							alt="app-store-button"
-							class="download-images"
+							class="hero__info--btn"
 							loading="lazy"
 						/>
 						<img
 							src="images/google-play.png"
 							alt="google-play-button"
-							class="download-images"
+							class="hero__info--btn"
 							loading="lazy"
 						/>
 					</div>
 					<img
 						src="images/app.svg"
-						alt="app"
-						class="iphone-app"
+						alt="iphone with app"
+						class="hero__info--app"
 						loading="lazy"
 					/>
 				</div>
@@ -104,9 +108,9 @@
 		</section>
 		<section id="who">
 			<div class="container section">
-				<h2 class="section-title">Quienes Somos</h2>
-				<div class="cards">
-					<div class="card">
+				<h2 class="section__title">Quienes Somos</h2>
+				<div class="who__cards">
+					<div class="who__card">
 						<h3>Misión</h3>
 
 						<p>
@@ -116,7 +120,7 @@
 						</p>
 						<img src="images/mision.svg" alt="mision" loading="lazy" />
 					</div>
-					<div class="card">
+					<div class="who__card">
 						<h3>Visión</h3>
 						<p>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
@@ -125,7 +129,7 @@
 						</p>
 						<img src="images/vision.svg" alt="vision" loading="lazy" />
 					</div>
-					<div class="card">
+					<div class="who__card">
 						<h3>Historia</h3>
 						<p>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
@@ -139,17 +143,17 @@
 		</section>
 		<section id="faq">
 			<div class="container section">
-				<h2 class="section-title">Preguntas Frecuentes</h2>
+				<h2 class="section__title">Preguntas Frecuentes</h2>
 				<div>
-					<div class="question">
+					<div class="faq__question">
 						<input
 							type="checkbox"
 							id="question1-toggle"
-							class="question-toggle"
+							class="faq__question--toggle"
 						/>
-						<div class="question-header">
+						<div class="faq__question--header">
 							<h3>Pregunta 1?</h3>
-							<label for="question1-toggle" class="question-toggle-label">
+							<label for="question1-toggle" class="faq__question--label">
 							</label>
 						</div>
 						<p>
@@ -157,15 +161,15 @@
 							consequuntur totam ea vitae nesciunt exercitationem!
 						</p>
 					</div>
-					<div class="question">
+					<div class="faq__question">
 						<input
 							type="checkbox"
 							id="question2-toggle"
-							class="question-toggle"
+							class="faq__question--toggle"
 						/>
-						<div class="question-header">
+						<div class="faq__question--header">
 							<h3>Pregunta 2?</h3>
-							<label for="question2-toggle" class="question-toggle-label">
+							<label for="question2-toggle" class="faq__question--label">
 							</label>
 						</div>
 						<p>
@@ -175,15 +179,15 @@
 							officiis illum nam quia amet architecto?
 						</p>
 					</div>
-					<div class="question">
+					<div class="faq__question">
 						<input
 							type="checkbox"
 							id="question3-toggle"
-							class="question-toggle"
+							class="faq__question--toggle"
 						/>
-						<div class="question-header">
+						<div class="faq__question--header">
 							<h3>Pregunta 3?</h3>
-							<label for="question3-toggle" class="question-toggle-label">
+							<label for="question3-toggle" class="faq__question--label">
 							</label>
 						</div>
 						<p>
@@ -198,10 +202,10 @@
 		</section>
 		<section id="contact">
 			<div class="container section">
-				<h2 class="section-title">Contáctenos</h2>
-				<div class="form-wrapper">
-					<form action="" class="main-form">
-						<label for="id" class="label-required"
+				<h2 class="section__title">Contáctenos</h2>
+				<div class="contact__form--wrapper">
+					<form action="" class="main__form">
+						<label for="id" class="form__label--required"
 							>Número de Identificación</label
 						>
 						<input
@@ -211,7 +215,9 @@
 							placeholder="Número de Identificación"
 							required
 						/>
-						<label for="name" class="label-required">Nombres y Apellidos</label>
+						<label for="name" class="form__label--required"
+							>Nombres y Apellidos</label
+						>
 						<input
 							type="text"
 							id="name"
@@ -221,7 +227,7 @@
 							minlength="5"
 							maxlength="50"
 						/>
-						<label for="cel" class="label-required">Celular</label>
+						<label for="cel" class="form__label--required">Celular</label>
 						<input
 							type="number"
 							id="cel"
@@ -229,7 +235,7 @@
 							placeholder="Celular"
 							required
 						/>
-						<label for="email" class="label-required">Email</label>
+						<label for="email" class="form__label--required">Email</label>
 						<input
 							type="email"
 							id="email"
@@ -238,7 +244,9 @@
 							required
 							minlength="5"
 						/>
-						<label for="area" class="label-required">Área/operación</label>
+						<label for="area" class="form__label--required"
+							>Área/operación</label
+						>
 						<input
 							type="text"
 							id="area"
@@ -246,7 +254,7 @@
 							placeholder="Área/operación"
 							required
 						/>
-						<label for="charge" class="label-required">Cargo</label>
+						<label for="charge" class="form__label--required">Cargo</label>
 						<input
 							type="text"
 							id="charge"
@@ -254,7 +262,7 @@
 							placeholder="Cargo"
 							required
 						/>
-						<label for="location" class="label-required"
+						<label for="location" class="form__label--required"
 							>Si necesitamos contactarte telefónicamente, indícanos donde te
 							encuentras</label
 						>
@@ -271,7 +279,7 @@
 							<option value="USA"></option>
 						</datalist>
 
-						<label for="time" class="label-required"
+						<label for="time" class="form__label--required"
 							>Horario en el que te podemos contactar</label
 						>
 						<input
@@ -283,7 +291,7 @@
 							placeholder="Horario en el que te podemos contactar"
 							required
 						/>
-						<button type="submit" class="main-button">Enviar</button>
+						<button type="submit" class="main__btn">Enviar</button>
 					</form>
 				</div>
 			</div>
