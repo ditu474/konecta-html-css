@@ -37,7 +37,7 @@
 							<ul class="main__nav">
 								<li><a href="#home" class="main__nav--link">Inicio</a></li>
 								<li>
-									<a href="#who" class="main__nav--link">Quienes somos</a>
+									<a href="#who" class="main__nav--link">Quiénes somos</a>
 								</li>
 								<li>
 									<a href="#faq" class="main__nav--link"
@@ -108,7 +108,7 @@
 		</section>
 		<section id="who">
 			<div class="container section">
-				<h2 class="section__title">Quienes Somos</h2>
+				<h2 class="section__title">Quiénes Somos</h2>
 				<div class="who__cards">
 					<div class="who__card">
 						<h3>Misión</h3>
@@ -212,8 +212,9 @@
 							type="number"
 							id="id"
 							name="id"
-							placeholder="Número de Identificación"
+							placeholder="Ej 1040754323"
 							required
+							minlength="6"
 						/>
 						<label for="name" class="form__label--required"
 							>Nombres y Apellidos</label
@@ -222,25 +223,26 @@
 							type="text"
 							id="name"
 							name="name"
-							placeholder="Nombres y Apellidos"
+							placeholder="Ej Daniel Ramirez"
 							required
 							minlength="5"
 							maxlength="50"
 						/>
 						<label for="cel" class="form__label--required">Celular</label>
 						<input
-							type="number"
+							type="text"
 							id="cel"
 							name="cel"
-							placeholder="Celular"
+							placeholder="Ej 305328212932"
 							required
+							minlength="10"
 						/>
 						<label for="email" class="form__label--required">Email</label>
 						<input
 							type="email"
 							id="email"
 							name="email"
-							placeholder="Email"
+							placeholder="Ej danielrg0322@gmail.com"
 							required
 							minlength="5"
 						/>
@@ -280,17 +282,9 @@
 						</datalist>
 
 						<label for="time" class="form__label--required"
-							>Horario en el que te podemos contactar</label
+							>Hora a la que te podemos contactar</label
 						>
-						<input
-							type="datetime-local"
-							min="2021-04-09T14:00"
-							value="2021-04-09T14:00"
-							id="time"
-							name="time"
-							placeholder="Horario en el que te podemos contactar"
-							required
-						/>
+						<input type="time" id="time" name="time" value="14:00" required />
 						<button type="submit" class="main__btn">Enviar</button>
 					</form>
 				</div>
